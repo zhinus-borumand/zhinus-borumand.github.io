@@ -1,0 +1,81 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: Merriweather, sans-serif;
+  font-size: 45px;
+  width: 90vw;
+  color: grey;
+  text-align: center;
+  margin: 2em 0px 0px 0px
+}
+
+h2 {
+	font-family: Merriweather, sans-serif;
+  font-size: 35px;
+  width: 90vw;
+  color: grey;
+  text-align: center;
+}
+
+h3 {
+  font-family: verdana, sans-serif;
+  text-align: center
+}
+
+h4 {
+  font-family:verdana, sans-serif;
+
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.navbar {
+	background-color: silver;
+    text-align: center;
+    }
+    
+a {
+	color: black;
+  }
+
+.center {
+	text-align: center;
+    }
+
+img {
+	max-width: 90%;
+    height: auto;
+    }
+
+.world-border {
+	border-color: white;
+    border-width: 15px;
+    border-style: solid; 
+    border-radius: 50%
+    }
+
+
+@media (min-width: 1200px) {
+  img {
+    max-width: 90%;
+    height: auto;
+    }
+}
+
+@media (max-width:768px) {
+	img {
+    max-width: 70%;
+    height: auto;
+}
+}
+
+@media (max-width:320px){ 
+	img {
+    max-width: 50%;
+    height: auto;
+}
