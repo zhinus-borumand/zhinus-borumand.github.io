@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+	  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" type="text/css">
+    <title>Zhinus' Blog - HTML-CSS</title>
+  </head>
+  
+  <div class="navbar">
+    <a href="https://zhinus-borumand.github.io/index.html" target="_self">Home</a>
+    <a href="https://zhinus-borumand.github.io/blogs.html" target="_self">Blogs</a>
+  </div>
+
+  <body>
+    <h1>What is the difference between Margin, Border, and Padding?</h1>
+    <h2>Let's dive in!</h2>
+    <p>Each HTML element essentially comprises a rectangle of space. The padding, border, and margin are the properties that control the space that surrounds each HTML element. </p>
+    <p>The border of an HTML element is basically a line that follows the perimeter of the HTML element, like a fence. </p>
+    <p>The padding of an HTML element controls the amount of space that is between the element’s border and its content. The more padding there is, the more distance there is in between the content of the element and the border.</p>
+    <p>In the illustration below, you can see that the green box has more padding than the orange box because there is more distance between the text in the middle of the green box and the green box’s border than there is for the orange box.</p>
+
+    <style>
+      .injected-text {
+        margin-bottom: -25px;
+        text-align: center;
+      }
+
+      .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        text-align: center;
+      }
+
+      .orange-box-padding {
+        background-color: orange;
+        margin: 20px 40px 20px 40px;
+        padding: 10px 20px 10px 20px;
+      }
+
+      .green-box-padding {
+        background-color: green;
+        margin: 20px 40px 20px 40px;
+        padding: 20px 40px 20px 40px;
+      }
+    </style>
+
+
+    <h5 class="box orange-box-padding">content</h5>
+    <h5 class="box green-box-padding">content</h5>
+
+    
+	
+    <div class="center">
+      <p>This is what was written for the orange box:</p> 
+      <img src="https://i.ibb.co/Kh8Vjv4/orange-box-padding.png" alt="orange-box-padding">
+    
+      <p>And this is what was written for the green box:</p>
+      <img src="https://i.ibb.co/JHg62df/green-box-padding.png" alt="orange-box-padding">
+    </div>
+    
+    <p>The margin of an HTML element controls the amount of space between that element’s border and the surrounding elements. When the margin is increased, the space between the element’s border and its surrounding elements is correspondingly increased.</p>
+    <p>In the illustration below, the green box and orange box are both contained inside a grey box. Because the green box has a bigger margin than the orange box, there is more space between the green box and the grey box than there is between the orange box and the grey box.</p> 
+    
+    <style>
+      .injected-text {
+        margin-bottom: -25px;
+        text-align: center;
+      }
+
+      .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        text-align: center;
+      }
+
+      .grey-box {
+        background-color: grey;
+        padding: 20px 40px 20px 40px;
+      }
+
+      .orange-box-margin {
+        background-color: orange;
+        margin: 20px 40px 20px 40px;
+        padding: 10px 20px 10px 20px;
+      }
+
+      .green-box-margin {
+        background-color: green;
+        margin: 40px 70px 40px 70px;
+        padding: 10px 20px 10px 20px;
+      }
+    </style>
+    <h5 class="injected-text">margin</h5>
+
+    <div class="box grey-box">
+      <h5 class="box orange-box-margin">content</h5>
+      <h5 class="box green-box-margin">content</h5>
+    </div>
+    
+    <div class="center">
+      <p>This is what was written for the orange box:</p> 
+      <img src="https://i.ibb.co/bFK288R/orange-box-margin.png" alt="orange-box-padding">
+    
+      <p>And this is what was written for the green box:</p>
+      <img src="https://i.ibb.co/jVD9zcc/green-box-margin.png" alt="orange-box-padding">
+    </div>
+    
+    <p>As you can see, increasing the margin can make the element look smaller. To make the element look larger, the element’s margin can be set to a negative value, such as -40px, as demonstrated with the green box like so:</p> 
+    
+    <style>
+      .injected-text {
+        margin-bottom: -25px;
+        text-align: center;
+      }
+
+      .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        text-align: center;
+      }
+
+      .grey-box {
+        background-color: grey;
+        padding: 20px 40px 20px 40px;
+      }
+
+      .orange-box-negmargin {
+        background-color: orange;
+        margin: 20px 40px 20px 40px;
+        padding: 10px 20px 10px 20px;
+      }
+
+      .green-box-negmargin {
+        background-color: green;
+        margin: 20px -40px 20px -40px;
+        padding: 20px 40px 20px 40px;
+      }
+    </style>
+    
+    <h5 class="injected-text">margin</h5>
+
+    <div class="box grey-box">
+      <h5 class="box orange-box-negmargin">content</h5>
+      <h5 class="box green-box-negmargin">content</h5>
+    </div>
+    
+    <p>Hope this explanation was clear!</p>
+    
+  
+  </body>
+
+</html>
