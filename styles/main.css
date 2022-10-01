@@ -1,20 +1,19 @@
 body {
   background-color: lightblue;
+  max-width: 80ch;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: Merriweather, sans-serif;
   font-size: 45px;
-  width: 90vw;
   color: grey;
   text-align: center;
-  margin: 2em 0px 0px 0px
 }
 
 h2 {
 	font-family: Merriweather, sans-serif;
   font-size: 35px;
-  width: 90vw;
   color: grey;
   text-align: center;
 }
